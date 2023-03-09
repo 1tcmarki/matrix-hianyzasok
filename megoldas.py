@@ -1,21 +1,20 @@
-#0. feladat A hianyzasok.txt beolvasasa listaban listakba !!THE MATRIX IS ATTACKING US!!
+#0. feladat a hianyzasok.txt beolvasása listában listába.
 
-hinayzasok=[]
+hianyzasok=[]
 with open("./adatok/hianyzasok.txt","r",encoding="utf-8") as fm:
     for sor in fm:
-        segedlista=(sor.strip().split(","))
+        seged_lista=(sor.strip().split(","))
         # l=[]
-        # for szam in segedlista:
+        # for szam in seged_lista:
         #     l.append(int(szam))
-        # hinayzasok.append(l)
-        hinayzasok.append(list(map(int,segedlista)))
-print("a beolvasott matrix : ")
-print(hinayzasok)
+        # hianyzasok.append(l)
+        hianyzasok.append(list(map(int, seged_lista)))
+print("a beolvasott matrix")
+print(hianyzasok)
 
-#1. hany ora hianyzas volt?
+# 1. Hány óra hiányzás volt összesen?
 osszeg=0
-for het in hinayzasok:
-    sum(het)
+for het in hianyzasok:
     osszeg+=sum(het)
 print(f"1. feladat : {osszeg} ora hianyzas volt osszesen")
 
