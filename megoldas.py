@@ -31,17 +31,13 @@ else:
 
 
 # 3. Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt
-print(f"3. feladat: Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt?")
-
-van_otos_het = False
-for het in hianyzasok:
-    if sum(het) <= 5:
-        van_otos_het=True
-
-if van_otos_het:
-    print("Volt olyan hét, amikor ötnél kevesebb hiányzás volt.")
+index=0
+while index<len(hianyzasok) and not(sum(hianyzasok[index])<5):
+    index+=1
+if index<len(hianyzasok):
+    print(f"Volt olyan hét amikor 5-nel kevesebb hianyzo volt.")
 else:
-    print("Nem volt olyan hét, amikor ötnél kevesebb hiányzás volt.")
+    print(f"Nem volt olyan het amikor 5-nel kevesebb hianyzo volt.")
 
 # 4. Melyik héten volt a legtöbb hiányzás?
 #4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
