@@ -19,8 +19,14 @@ for het in hianyzasok:
 print(f"1. feladat : {osszeg} ora hianyzas volt osszesen")
 
 # 2. Volt-e olyan hét, amikor nem volt hiányzó?
-print(f"2. feladat: Nem volt olyan hét, amikor nem volt hiányzó")
-
+volt_e=False
+for het in hianyzasok:
+    if not('1') in het:
+        volt_e=False
+if volt_e==False:
+    print(f"2. feladat: Nem volt olyan hét, amikor nem volt hiányzó")
+else:
+    print(f"Volt olyan hét amikor nem volt hianyzo.")
 
 
 
