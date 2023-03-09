@@ -9,5 +9,5 @@ with open("./adatok/hianyzasok.txt","r",encoding="utf-8") as fm:
         #     l.append(int(szam))
         # hinayzasok.append(l)
         hinayzasok.append(list(map(int,segedlista)))
-
+print("a beolvasott matrix : ")
 print(hinayzasok)
