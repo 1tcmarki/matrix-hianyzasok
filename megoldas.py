@@ -16,23 +16,23 @@ print(hianyzasok)
 osszeg=0
 for het in hianyzasok:
     osszeg+=sum(het)
-print(f"1. feladat : {osszeg} ora hianyzas volt osszesen")
 
-# 2. Volt-e olyan hét, amikor nem volt hiányzó?
-volt_e=False
-for het in hianyzasok:
-    if not('1') in het:
-        volt_e=False
-if volt_e==False:
-    print(f"2. feladat: Nem volt olyan hét, amikor nem volt hiányzó")
-else:
-    print(f"Volt olyan hét amikor nem volt hianyzo.")
 
+print(f"# 1. feladat: {osszeg} óra hiányzás volt összesen?")
 
 
 # 3. Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt
-print(f"3. feladat: Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt")
+print(f"3. feladat: Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt?")
 
+van_otos_het = False
+for het in hianyzasok:
+    if sum(het) <= 5:
+        van_otos_het=True
+
+if van_otos_het:
+    print("Volt olyan hét, amikor ötnél kevesebb hiányzás volt.")
+else:
+    print("Nem volt olyan hét, amikor ötnél kevesebb hiányzás volt.")
 
 # 4. Melyik héten volt a legtöbb hiányzás?
 #4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
@@ -50,3 +50,5 @@ print(f"4. feladat: Az . héten volt a legtöbb , {heti_legtobb} hianyzas.")
 # legtobb_hianyzas = max(heti_hianyzasok)
 # legtobb_hianyzas_index = heti_hianyzasok.index(legtobb_hianyzas) + 1
 # print(f"A legtöbb hiányzás a(z) {legtobb_hianyzas_index}. héten volt, összesen {legtobb_hianyzas} hiányzás.")
+
+
