@@ -11,3 +11,11 @@ with open("./adatok/hianyzasok.txt","r",encoding="utf-8") as fm:
         hianyzasok.append(list(map(int, seged_lista)))
 print("a beolvasott matrix")
 print(hianyzasok)
+
+# 1. Hány óra hiányzás volt összesen?
+osszeg=0
+for het in hianyzasok:
+    osszeg+=sum(het)
+
+
+print(f"# 1. feladat: {osszeg} óra hiányzás volt összesen?")
