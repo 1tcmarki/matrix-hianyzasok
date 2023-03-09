@@ -32,3 +32,21 @@ else:
 
 # 3. Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt
 print(f"3. feladat: Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt")
+
+
+# 4. Melyik héten volt a legtöbb hiányzás?
+#4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
+# legtobbheti=osszeg.index(max(osszeg))+1
+# print(legtobbheti)
+heti_hianyzasok=[]
+heti_hianyzasok.append(sum(hianyzasok[0]))
+heti_hianyzasok.append(sum(hianyzasok[1]))
+heti_hianyzasok.append(sum(hianyzasok[2]))
+heti_hianyzasok.append(sum(hianyzasok[3]))
+print(heti_hianyzasok)
+heti_legtobb=(max(heti_hianyzasok))
+print(f"4. feladat: Az . héten volt a legtöbb , {heti_legtobb} hianyzas.")
+# Melyik héten volt a legtöbb hiányzás?
+# legtobb_hianyzas = max(heti_hianyzasok)
+# legtobb_hianyzas_index = heti_hianyzasok.index(legtobb_hianyzas) + 1
+# print(f"A legtöbb hiányzás a(z) {legtobb_hianyzas_index}. héten volt, összesen {legtobb_hianyzas} hiányzás.")
