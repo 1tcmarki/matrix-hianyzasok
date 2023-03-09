@@ -35,9 +35,9 @@ index=0
 while index<len(hianyzasok) and not(sum(hianyzasok[index])<5):
     index+=1
 if index<len(hianyzasok):
-    print(f"Volt olyan hét amikor 5-nel kevesebb hianyzo volt.")
+    print(f"3. feladat : Volt olyan hét amikor 5-nel kevesebb hianyzo volt.")
 else:
-    print(f"Nem volt olyan het amikor 5-nel kevesebb hianyzo volt.")
+    print(f"3. feladat : Nem volt olyan het amikor 5-nel kevesebb hianyzo volt.")
 
 # 4. Melyik héten volt a legtöbb hiányzás?
 #4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
@@ -61,3 +61,14 @@ for index in range(len(hianyzasok)):
 
 print(f"4. feladat : A legtobb hianyzas a {max_index+1}. héten volt. {sum(hianyzasok[max_index])}.")
 
+#5. feladat hanyadik héten volt egyetlen hianyzas?
+index=0
+while index<len(hianyzasok) and not(sum(hianyzasok[index])==1):
+    index+=1
+van=index<len(hianyzasok)
+if van:
+    sorszam=index
+    print(f"5. feladat : A {sorszam+1}. héten volt egyetlen hianyzas")
+else:
+    sorszam=-1
+    print(f"5. feladat : Egyik heten sem volt egyetlen hianyzas.")
