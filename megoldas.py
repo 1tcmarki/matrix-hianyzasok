@@ -44,10 +44,10 @@ else:
 # legtobbheti=osszeg.index(max(osszeg))+1
 # print(legtobbheti)
 # heti_hianyzasok=[]
+# heti_hianyzasok.append(sum(hianyzasok[3]))
 # heti_hianyzasok.append(sum(hianyzasok[0]))
 # heti_hianyzasok.append(sum(hianyzasok[1]))
 # heti_hianyzasok.append(sum(hianyzasok[2]))
-# heti_hianyzasok.append(sum(hianyzasok[3]))
 # heti_legtobb=(max(heti_hianyzasok))
 # print(f"4. feladat: Az . héten volt a legtöbb , {heti_legtobb} hianyzas.")
 # Melyik héten volt a legtöbb hiányzás?
